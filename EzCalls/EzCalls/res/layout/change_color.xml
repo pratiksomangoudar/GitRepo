@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_app">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textheading" 
+        android:text="@string/changecolorheading"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textnormal"
+        android:text="@string/changecolortxt"/>
+
+  <ListView android:id="@+id/colorlist"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_app"
+      android:divider="@color/Ivory"
+      android:dividerHeight="1dp"
+      android:clickable="true"
+      android:choiceMode="singleChoice"
+      android:hapticFeedbackEnabled="true"
+      android:layout_weight="1"
+      ></ListView>
+
+  <Button
+      android:id="@+id/savecolor"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/blue_button"
+      style="@style/ButtonText"
+      android:text="@string/savecolor"
+       />
+
+</LinearLayout>

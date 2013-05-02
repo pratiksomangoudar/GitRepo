@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+    
+    android:background="@drawable/appwidget_dark_bg"
+    android:baselineAligned="true"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="horizontal"
+    >
+<!-- android:alpha="0.90" android:showDividers="middle"  -->
+    <!--
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    -->
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/contactLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@color/Aqua"
+            android:orientation="vertical" 
+            android:layout_marginBottom="5dp">
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+           
+            android:hapticFeedbackEnabled="true"
+            android:gravity="center"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Ivory"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/DarkGray"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/contactLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_margin="2dp"
+            android:background="@color/Aqua"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp" >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Ivory"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/DarkGray"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/contactLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_margin="2dp"
+            android:background="@color/Aqua"
+            android:orientation="vertical" 
+            android:layout_marginBottom="5dp">
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Ivory"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/DarkGray"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+         >
+
+        <LinearLayout
+            android:id="@+id/contactLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:layout_margin="2dp"
+            android:background="@color/Aqua"
+            android:orientation="vertical" 
+            android:layout_marginBottom="5dp">
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:hapticFeedbackEnabled="true"
+            
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Ivory"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+</LinearLayout>

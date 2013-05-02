@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="Location Based"
+        android:key="Location Based">
+        
+        <CheckBoxPreference 
+            android:key="checkBox_location"
+            android:summary="Display contacts based on my location"
+            android:title="Enable Location Based " 
+            android:defaultValue="true"
+        />
+        
+        <ListPreference 
+            android:key="location_criteria"
+            android:title="Distance Setting"
+            android:summary="Let app display results based on calls made to contacts, within the selected distance, from my current location. (Recommended 500m)"
+            android:defaultValue="500" 
+            android:entries="@array/distance_key"
+            android:entryValues="@array/distance_values"
+            android:dependency="checkBox_location"
+            
+        />    
+         <CheckBoxPreference
+             android:key="custom_checkBox_location"
+            android:summary="Allow me to set custom distance settings"
+            android:title="Enable Custom Distance Setting " 
+            android:defaultValue="false" 
+            android:dependency="checkBox_location"/>   
+            
+         <EditTextPreference android:key="custom_location_criteria"
+             android:title="Custom Distance Settings"
+             android:summary="Enter the distance setting in meters"
+             android:defaultValue="500"
+             android:inputType="numberDecimal"
+             android:digits="0123456789"
+             android:dependency="custom_checkBox_location"/>
+         
+    </PreferenceCategory>
+    
+     <PreferenceCategory 
+        android:title="Time Based"
+        android:key="Time Based">
+        
+        <CheckBoxPreference 
+            android:key="checkBox_time"
+            android:summary="Display contacts based on time"
+            android:title="Enable Time Based " 
+            android:defaultValue="true"
+        />
+        
+        <ListPreference 
+            android:key="time_criteria"
+            android:title="Time Setting"
+            android:summary="Let app display results based on calls made to contacts, within the selected interval, from the present time. (Recommended 1.5 hr)"
+            android:defaultValue="45" 
+            android:entries="@array/time_key"
+            android:entryValues="@array/time_values"
+            android:dependency="checkBox_time"
+        />    
+         <CheckBoxPreference
+             android:key="custom_checkBox_time"
+            android:summary="Allow me to set custom time settings"
+            android:title="Enable Custom Time Setting " 
+            android:defaultValue="false" 
+            android:dependency="checkBox_time"/>   
+            
+         <EditTextPreference android:key="custom_time_criteria"
+             android:title="Custom Time Settings"
+             android:summary="Enter the Time setting in minutes"
+             android:defaultValue="90"
+             android:inputType="numberDecimal"
+             android:digits="0123456789"
+             android:dependency="custom_checkBox_time"/>   
+    </PreferenceCategory>
+    
+
+    <PreferenceCategory 
+        android:title="General Setting"
+        android:key="update_interval">
+
+        <ListPreference 
+            android:key="update_interval_period"
+            android:title="Widget Update Interval"
+            android:summary="Define the time interval to update the widget. (Recommended 10 mins)"
+            android:defaultValue="600000" 
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+            
+        /> 
+<CheckBoxPreference
+             android:key="custom_update_interval"
+            android:summary="Allow me to set custom update interval"
+            android:title="Enable Custom Update Interval" 
+            android:defaultValue="false" />   
+            
+         <EditTextPreference android:key="custom_update_interval_period"
+             android:title="Custom Update Interval"
+             android:summary="Enter the Update Interval in minutes"
+             android:defaultValue="10"
+             android:inputType="numberDecimal"
+             android:digits="0123456789"
+             android:dependency="custom_update_interval"/> 
+    </PreferenceCategory>
+    
+</PreferenceScreen>

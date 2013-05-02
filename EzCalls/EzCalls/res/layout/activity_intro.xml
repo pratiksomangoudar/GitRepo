@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IntroActivity" >
+ <ScrollView
+           android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical"
+        >
+
+       
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/textheading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/welcome" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    style="@style/textnormal"
+	    android:layout_width="match_parent"
+	    android:text="@string/intro" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textheading"
+        android:text="@string/enablewidgetheading" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/textnormal"
+        android:text="@string/enablewidgetnormal" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/textheading"
+        android:text="@string/privacyheading" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/textnormal"
+        android:text="@string/privacynormal"/>
+
+    </LinearLayout>
+    </ScrollView>
+<LinearLayout 
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/setting_button"
+        android:background="@drawable/blue_button"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/colorchange_button"
+        android:background="@drawable/blue_button"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Change Contact Color" />
+    
+</LinearLayout>
+</LinearLayout>
